@@ -13,8 +13,8 @@ jobs:
       - name: checkout code
         uses: actions/checkout@v3
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install surge
+        run: npm install -g surge
 
       - name: deploy to surge
         env:
